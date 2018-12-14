@@ -1,0 +1,35 @@
+@import "variables";
+@mixin headerDefault(){
+    margin: 0 auto;
+    h1{
+        width: 100%;
+        i.fa-lg{
+            display: inline;
+            vertical-align: baseline;
+            float: none;
+            font-size: $font-size_1*4;
+            line-height: $font-size_3-9*1.6;
+            ~ span{
+                float: none;
+                letter-spacing: $font-size_1/4;
+                font-size: $font-size_3-9; // 1 lines of 3.998 * 1.6 = 6.3968
+                text-align: left;
+            }
+        }
+    }
+}
+@mixin footerDefault(){
+    &[lang = 'en'],
+    &[lang = 'de'],
+    &[lang = 'ar'],
+    &[lang = 'ru']{
+        display: none;
+    }
+}
+@mixin cal($n, $w, $s){
+    width: ($w - $s*($n - 1)) / $n;
+    margin-left: $s;
+    &:first-child{
+        margin-left: 0;
+    }
+}

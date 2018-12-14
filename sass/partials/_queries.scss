@@ -1,0 +1,15 @@
+@mixin forPhone($width){
+    @media all and (min-width: 300px) and (max-width: $width){
+        @content; // which allows us to pass a content block into a mixin.
+    }
+}
+@mixin forTablet($width){
+    @media all and (min-width: 576px) and (max-width: $width){
+        @content;
+    }
+}
+@mixin forDesktop($width){
+    @media all and (min-width: $width){
+        @content;
+    }
+}

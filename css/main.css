@@ -1,0 +1,227 @@
+/***********************************************
+                      colors
+***********************************************/
+/***********************************************
+                  font-family
+***********************************************/
+/***********************************************
+                   font-size
+***********************************************/
+/***********************************************
+                   spacing
+***********************************************/
+/***********************************************
+                      colors
+***********************************************/
+/***********************************************
+                  font-family
+***********************************************/
+/***********************************************
+                   font-size
+***********************************************/
+/***********************************************
+                   spacing
+***********************************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+/***********************************************
+                    DEFAULTS
+***********************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+  *:after, *:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+body {
+  padding-top: 58px;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #170d3f;
+  line-height: 1.6; }
+
+nav {
+  background-color: #170d3f; }
+  nav.navbar-light .navbar-brand, nav.navbar-light .navbar-nav .nav-link {
+    color: #00ffea; }
+    nav.navbar-light .navbar-brand:hover, nav.navbar-light .navbar-brand:active, nav.navbar-light .navbar-nav .nav-link:hover, nav.navbar-light .navbar-nav .nav-link:active {
+      color: #ffff99; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #00ffea; }
+  a:hover, a:active {
+    color: #ffff99;
+    text-decoration: none; }
+
+.btn:focus {
+  box-shadow: none; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+/***********************************************
+                    SPECIAL
+***********************************************/
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+/***********************************************
+                      LAYOUT
+***********************************************/
+.navbar .navbar-toggler {
+  outline: none; }
+.navbar .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8"); }
+
+.container-fluid {
+  background-color: #00ffea; }
+
+.header {
+  margin: 0 auto;
+  height: 40vh;
+  background-image: url(https://picsum.photos/900/200/?gravity=west);
+  background-size: cover; }
+  .header .img-fluid {
+    height: 20vh; }
+
+.content {
+  max-width: 80%; }
+
+.card {
+  padding: 0;
+  border: none;
+  background-color: #170d3f;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.65);
+  transition: all 0.2s linear; }
+  .card::after {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: all 0.2s linear; }
+  .card:hover, .card:active {
+    background-color: white;
+    transform: scale(1.05, 1.05); }
+    .card:hover::after, .card:active::after {
+      opacity: 1; }
+  .card .card-body p {
+    margin: 0;
+    font-size: 12px; }
+  .card .card-footer {
+    background-color: #2d235c; }
+    .card .card-footer:hover, .card .card-footer:active {
+      color: #170d3f;
+      font-weight: 700;
+      background-color: #ffff99; }
+    .card .card-footer > a {
+      color: #00ffea; }
+
+form {
+  margin: 0 auto;
+  max-width: 500px; }
+  form input {
+    outline: none; }
+
+footer {
+  color: #00ffea;
+  background-color: #170d3f; }
+  footer .footer-copyright {
+    font-size: 0.707rem; }
+
+/***********************************************
+                     CONTENT
+***********************************************/
+.img-fluid {
+  margin: 0 2rem;
+  border: 3px solid white; }
+
+span.display-4 {
+  margin-right: 2rem;
+  font-size: 3rem;
+  color: #170d3f;
+  text-shadow: 1px 1px 1px #00ffea; }
+
+.fa-html5 {
+  color: #e34f26; }
+
+.fa-css3-alt {
+  color: #00A1E9; }
+
+.fa-js-square {
+  color: #f7df1e; }
+
+.fa-python {
+  color: #4B8BBE; }
+
+.fa-database {
+  color: #082a77; }
+
+.fa-github {
+  color: #333; }
+
+h2 {
+  padding-top: 3px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+h3, h2 {
+  border-bottom: 1.2px solid #170d3f; }
+  h3.icon-padding-adjust, h2.icon-padding-adjust {
+    padding-top: 2px; }
+
+h5 {
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #170d3f; }
+
+.btn-adjust {
+  padding: 2px 10px;
+  font-size: 1.414rem;
+  color: #00ffea;
+  background-color: #170d3f; }
+  .btn-adjust:hover, .btn-adjust:active {
+    font-weight: 600;
+    color: #170d3f;
+    background-color: #ffff99;
+    transition: 0s; }
+
+.file-adjust {
+  color: #ff0058; }
+
+/***********************************************
+                  MEDIA QUERIES
+***********************************************/
+@media all and (min-width: 300px) and (max-width: 576px) {
+  .content {
+    max-width: 90%; }
+
+  .margin-adjust {
+    margin: 0 10%; }
+
+  .card {
+    padding: 3px;
+    background-color: white; }
+    .card:hover, .card:active {
+      transform: scale(1, 1); }
+    .card .card-body p {
+      margin: 0;
+      font-size: 1.3rem; }
+    .card > a {
+      font-size: 1.414rem;
+      letter-spacing: 2px; }
+
+  h5 {
+    font-size: 2rem;
+    font-weight: 700; } }
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .margin-adjust {
+    margin: 0 20%; } }
+
+/*# sourceMappingURL=main.css.map */
